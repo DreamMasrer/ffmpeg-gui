@@ -40,7 +40,7 @@ root.title("MP4 to MOV Converter")
 # Source directory selection
 source_label = ctk.CTkLabel(root, text="Source Directory:")
 source_label.grid(row=0, column=0, padx=5, pady=5)
-source_entry = ctk.CTkEntry(root, width=50)
+source_entry = ctk.CTkEntry(root, width=130)
 source_entry.grid(row=0, column=1, padx=5, pady=5)
 source_button = ctk.CTkButton(root, text="Select", command=select_source_dir)
 source_button.grid(row=0, column=2, padx=5, pady=5)
@@ -48,14 +48,10 @@ source_button.grid(row=0, column=2, padx=5, pady=5)
 # Destination directory selection
 destination_label = ctk.CTkLabel(root, text="Destination Directory:")
 destination_label.grid(row=1, column=0, padx=5, pady=5)
-destination_entry = ctk.CTkEntry(root, width=50)
+destination_entry = ctk.CTkEntry(root, width=130)
 destination_entry.grid(row=1, column=1, padx=5, pady=5)
 destination_button = ctk.CTkButton(root, text="Select", command=select_destination_dir)
 destination_button.grid(row=1, column=2, padx=5, pady=5)
-
-
-# Destination directory selection
-# ... (similar structure as above)
 
 # Convert button
 convert_button = ctk.CTkButton(root, text="Convert", command=convert)
