@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import filedialog
 import os
 import subprocess
+import customtkinter as ctk
 
 def convert_mp4_to_mov(source_dir, destination_dir):
     # Create destination directory if it doesn't exist
@@ -31,28 +32,33 @@ def convert():
     destination_dir = destination_entry.get()
     convert_mp4_to_mov(source_dir, destination_dir)
 
-# GUI setup
-root = tk.Tk()
+# GUI setup using customtkinter widgets
+ctk.set_appearance_mode("dark")  # Optional: Set a dark theme
+root = ctk.CTk()
 root.title("MP4 to MOV Converter")
 
 # Source directory selection
-source_label = tk.Label(root, text="Source Directory:")
+source_label = ctk.CTkLabel(root, text="Source Directory:")
 source_label.grid(row=0, column=0, padx=5, pady=5)
-source_entry = tk.Entry(root, width=50)
+source_entry = ctk.CTkEntry(root, width=50)
 source_entry.grid(row=0, column=1, padx=5, pady=5)
-source_button = tk.Button(root, text="Select", command=select_source_dir)
+source_button = ctk.CTkButton(root, text="Select", command=select_source_dir)
 source_button.grid(row=0, column=2, padx=5, pady=5)
 
 # Destination directory selection
-destination_label = tk.Label(root, text="Destination Directory:")
+destination_label = ctk.CTkLabel(root, text="Destination Directory:")
 destination_label.grid(row=1, column=0, padx=5, pady=5)
-destination_entry = tk.Entry(root, width=50)
+destination_entry = ctk.CTkEntry(root, width=50)
 destination_entry.grid(row=1, column=1, padx=5, pady=5)
-destination_button = tk.Button(root, text="Select", command=select_destination_dir)
+destination_button = ctk.CTkButton(root, text="Select", command=select_destination_dir)
 destination_button.grid(row=1, column=2, padx=5, pady=5)
 
+
+# Destination directory selection
+# ... (similar structure as above)
+
 # Convert button
-convert_button = tk.Button(root, text="Convert", command=convert)
+convert_button = ctk.CTkButton(root, text="Convert", command=convert)
 convert_button.grid(row=2, column=1, padx=5, pady=5)
 
 root.mainloop()

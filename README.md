@@ -4,6 +4,7 @@ Please feel free to add and modify this script.\
 If you want to use this code you need to install following software:\
     1.Python\
     2.python3-tk\
-    3.ffmpeg
+    3.customtkinter\
+    4.ffmpeg
 
 I Wish You All the Best from me, Svetoslav Ivanov!!!
