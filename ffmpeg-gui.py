@@ -1,5 +1,3 @@
-#Hello, this is my ffmpeg Python script with GUI
-
 import tkinter as tk
 from tkinter import filedialog
 import os
