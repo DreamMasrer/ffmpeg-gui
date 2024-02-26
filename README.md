@@ -7,7 +7,7 @@ If you want to use this code you need to install following software:\
     3.customtkinter\
     4.ffmpeg
 
-There is Windows exe file in the "Windows exe" folder, that you can run after installing ffmpeg acording to this article https://www.geeksforgeeks.org/how-to-install-ffmpeg-on-windows/
+There is Windows exe file in the "Windows exe" folder, that you can run after installing ffmpeg according to this article https://www.geeksforgeeks.org/how-to-install-ffmpeg-on-windows/
 
 You can find appimage for Debian based distros in "Debian Based Executable" folder
 
